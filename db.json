@@ -1,0 +1,22 @@
+{
+  "transactions": [
+    {
+      "name": "Salário",
+      "amount": 1000,
+      "type": "deposit",
+      "id": 1
+    },
+    {
+      "name": "Freela",
+      "amount": 3000,
+      "type": "deposit",
+      "id": 2
+    },
+    {
+      "name": "Aluguel",
+      "amount": 3000,
+      "type": "debit",
+      "id": 3
+    }
+  ]
+}

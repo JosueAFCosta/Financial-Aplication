@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Finanças</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Minhas Finanças</h1>
+    </header>
+
+    <main>
+
+        <div id="formField">
+
+            <h2 id="formTitle">Nova Transação</h2>
+    
+            <form>
+    
+                <section class="textInputs">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </section>
+        
+                <section class="textInputs">
+                    <label for="value">Valor:</label>
+                    <input type="text" id="value" name="value" required>
+                </section>
+
+                <div>
+                    <section>
+                        <label for="deposit">Depósito</label>
+                        <input type="radio" name="transactionsType" id="deposit" data-value="deposit" required>
+                    </section>
+
+                    <section>
+                        <label for="debit">Débito</label>
+                        <input type="radio" name="transactionsType" id="debit" data-value="debit" required>
+                    </section>
+                </div>
+
+                <button id="saveBtn">Salvar</button>
+    
+            </form>
+    
+        </div>
+    
+        <div id="transactionsField">
+    
+            <h2 id="balanceField">Saldo: <span id="balance"></span></h2>
+            
+            <h2>Histórico de Transações</h2>
+    
+            <section id="transactions">
+
+            </section>
+        </div>
+    </main>
+    
+</body>
+</html>
